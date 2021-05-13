@@ -88,6 +88,11 @@
                 "name": "Relatorio",
                 "pattern": "Relatorio",
                 "target": ["Menu", "Relatorio"]
+                },
+                {
+                "name": "Gerenciar",
+                "pattern": "Gerenciar",
+                "target": ["Menu", "Gerenciar"]
                 }
             ],
             "targets": {
@@ -112,6 +117,14 @@
 					"clearControlAggregation": false,
 					"viewId": "relatorio",
                     "viewName": "Relatorio",
+                    "controlAggregation": "detailPages"
+                },
+                "Gerenciar": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewId": "gerenciar",
+                    "viewName": "Gerenciar",
                     "controlAggregation": "detailPages"
                 }
             }

@@ -9,8 +9,8 @@
         <content>
             <VBox width="100%" >
                 <Image src="images/logo_tr.png" width="100%" height="100%" />
-                <Button  text="Relátorios" press="onNavCadastroProdutos"   width="100%"/>
-                <Button  text="Gerenciar Equipes" press="onNavConsultaProdutos"  width="100%" />
+                <Button  text="Relátorios" press="onNavRelatorio"   width="100%"/>
+                <Button  text="Gerenciar Equipes" press="onNavGerenciar"  width="100%" />
             </VBox>
         </content>
     </Page>
