@@ -4,13 +4,9 @@
     displayBlock="true"
     xmlns="sap.m"
 >
-	<Shell id="shell">
-		<App id="app">
-			<pages>
-				<Page id="page" title="{i18n>title}">
-					<content />
-				</Page>
-			</pages>
-		</App>
-	</Shell>
+	
+		<SplitApp id="app">
+			
+		</SplitApp>
+	
 </mvc:View>

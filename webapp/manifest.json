@@ -77,18 +77,42 @@
                 {
                     "name": "RouteApp",
                     "pattern": "RouteApp",
-                    "target": [
-                        "TargetApp"
-                    ]
+                    "target": ["TargetApp"]
+                },
+                {
+				"name": "Menu",
+				"pattern": "",
+				"target": ["Menu" ,"Relatorio"]
+                },
+                {
+                "name": "Relatorio",
+                "pattern": "Relatorio",
+                "target": ["Menu", "Relatorio"]
                 }
             ],
             "targets": {
+                 "Menu":{
+                   "viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewId": "menu",
+                    "viewName": "Menu",
+                    "controlAggregation": "masterPages"           
+                },
                 "TargetApp": {
                     "viewType": "XML",
                     "transition": "slide",
                     "clearControlAggregation": false,
                     "viewId": "App",
                     "viewName": "App"
+                },
+                "Relatorio": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewId": "relatorio",
+                    "viewName": "Relatorio",
+                    "controlAggregation": "detailPages"
                 }
             }
         }

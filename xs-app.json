@@ -17,6 +17,12 @@
     {
       "source": "^(.*)$",
       "target": "$1",
+      "destination": "api-house",
+      "csrfProtection": false
+    },
+    {
+      "source": "^(.*)$",
+      "target": "$1",
       "service": "html5-apps-repo-rt",
       "authenticationType": "xsuaa"
     }

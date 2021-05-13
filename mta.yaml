@@ -7,6 +7,7 @@ modules:
   type: com.sap.application.content
   requires:
   - name: app-l4desafio-app-dest-srv
+  - name: dest_Api_House
     parameters:
       content-target: true
   - name: app-l4desafio-app-repo-host
@@ -89,6 +90,11 @@ resources:
     service: html5-apps-repo
     service-name: app-l4desafio-app-html5-srv
     service-plan: app-host
+- name: dest_Api_House
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: destination
+    service-plan: lite
 parameters:
   deploy_mode: html5-repo
   enable-parallel-deployments: true

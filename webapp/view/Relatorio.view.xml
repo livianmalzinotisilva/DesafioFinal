@@ -1,0 +1,23 @@
+<mvc:View
+    controllerName="app.l4desafio.app.controller.Relatorio"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Page showHeader="true" title="Relatorio" titleAlignment="Center">
+    <content>
+        	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Cumulative Totals" subheader="Expenses" press="press">
+		<TileContent unit="Unit" footer="Footer Text">
+			<NumericContent value="1762" icon="sap-icon://line-charts" withMargin="false" />
+		</TileContent>
+	</GenericTile>
+
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Cumulative Totals" subheader="Expenses" press="press">
+		<TileContent unit="Unit" footer="Footer Text">
+			<NumericContent value="12" withMargin="false" />
+		</TileContent>
+	</GenericTile>
+    </content>
+    </Page>
+		
+</mvc:View>
