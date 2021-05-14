@@ -1,9 +1,28 @@
 <mvc:View
-    controllerName="app.l4desafio.app.controller.App"
+    controllerName="app.l4desafio.app.controller.Gerenciar"
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
     xmlns="sap.m"
 >
-	
-		
+	<Page showHeader="true" title="Gerenciar Equipes" titleAlignment="Center">
+        <content>
+              <Text text="Defina a porcentagem desejada :" class="sapUiSmallMarginBottom" />
+            	<RangeSlider showAdvancedTooltip="true"   range="{/RS1}" min="0" max="100" width="80%" class="sapUiMediumMarginBottom" />
+                    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Funcionarios" subheader="Recursos Humanos" press="press">
+		                <TileContent unit="Unit" footer="Footer Text">
+			                <NumericContent value="10" icon="sap-icon://line-charts" withMargin="false" />
+		                </TileContent>
+	                </GenericTile>
+	                <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Funcionarios" subheader="Administração" press="press">
+		                <TileContent unit="Unit" footer="Footer Text">
+			                <NumericContent value="12" withMargin="false" />
+		                </TileContent>
+	                </GenericTile>
+                    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Funcionarios" subheader="Desenvolvimento" press="press">
+		                <TileContent unit="Unit" footer="Footer Text">
+			                <NumericContent value="25" withMargin="false" />
+		                </TileContent>
+	                </GenericTile>
+        </content>
+    </Page>		
 </mvc:View>

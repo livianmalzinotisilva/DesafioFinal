@@ -82,7 +82,7 @@
                 {
 				"name": "Menu",
 				"pattern": "",
-				"target": ["Menu" ,"Relatorio"]
+				"target": ["Menu","Relatorio"]
                 },
                 {
                 "name": "Relatorio",
