@@ -16,6 +16,9 @@ sap.ui.define([
             },
              onNavRelatorio: function(){
                 this.getRouter().navTo("Relatorio");
+            },
+            onNavListar: function(){
+                this.getRouter().navTo("Listar");
             }
 	});
 });

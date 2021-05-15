@@ -1,0 +1,49 @@
+<mvc:View xmlns:control="sap.gantt.control"
+    controllerName="app.l4desafio.app.controller.Menu"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	
+	<Page showHeader="true" title="Listar" titleAlignment="Center">
+       <content>
+            <Table mode="Delete" id="tablePlataformas" delete="onExcluir" items="{path: 'Plataformas>/'}">
+                <headerToolbar>
+                    <OverflowToolbar >
+                        <content>
+                            <Title text="Funcionários" level="H2" />
+                            <ToolbarSpacer ></ToolbarSpacer>
+                            <SearchField placeholder="Digite o CPF do funcionário" width="50%" liveChange="onSearch" ></SearchField>
+                        </content>
+                    </OverflowToolbar>
+                </headerToolbar>
+                <columns>
+                    <Column demandPopin="true" minScreenWidth="Desktop">
+                        <Label wrapping="true" text="CPF" design="Bold"></Label>
+                    </Column>
+                    <Column demandPopin="true" minScreenWidth="Desktop">
+                        <Label wrapping="true" text="Nome" design="Bold"></Label>
+                    </Column>
+                    <Column demandPopin="true" minScreenWidth="Desktop">
+                        <Label wrapping="true" text="Idade" design="Bold"></Label>
+                    </Column>
+                    <Column demandPopin="true" minScreenWidth="Desktop">
+                        <Label wrapping="true" text="Pontos" design="Bold"></Label>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem type="Detail" detailPress="onNavEditarPlataformas">
+                        <cells>
+                            <Text text="{Plataformas>CPF}"></Text>
+                            <Text text="{Plataformas>nome}"></Text>
+                            <Text text="{Plataformas>idade}"></Text>
+                            <Text text="{Plataformas>Pontos}"></Text>
+                        
+                            <!--<ObjectStatus text="{= ${Plataformas>status} === 'A' ? 'Ativo' : 'Inativo'}"  state="{= ${Plataformas>status} === 'A' ? 'Success' : 'Error'}"></ObjectStatus>-->
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+       </content>
+    </Page>
+</mvc:View>

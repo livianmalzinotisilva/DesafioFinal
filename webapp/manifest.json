@@ -93,6 +93,11 @@
                 "name": "Gerenciar",
                 "pattern": "Gerenciar",
                 "target": ["Menu", "Gerenciar"]
+                },
+                 {
+                "name": "Listar",
+                "pattern": "Listar",
+                "target": ["Menu", "Listar"]
                 }
             ],
             "targets": {
@@ -125,6 +130,14 @@
 					"clearControlAggregation": false,
 					"viewId": "gerenciar",
                     "viewName": "Gerenciar",
+                    "controlAggregation": "detailPages"
+                },
+                "Listar": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewId": "listar",
+                    "viewName": "Listar",
                     "controlAggregation": "detailPages"
                 }
             }

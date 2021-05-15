@@ -6,21 +6,59 @@
 >
 	<Page showHeader="true" title="Relatorio" titleAlignment="Center">
         <content>
-            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Funcionarios" subheader="Recursos Humanos" press="press">
+    
+            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop " header="Funcionarios"  press="press" width="25%">
 		        <TileContent unit="Unit" footer="Footer Text">
 			        <NumericContent value="10" icon="sap-icon://line-charts" withMargin="false" />
 		        </TileContent>
-	        </GenericTile>
-	        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Funcionarios" subheader="Administração" press="press">
+	        </GenericTile>                   
+               
+	        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Funcionarios em home office"  press="press">
 		        <TileContent unit="Unit" footer="Footer Text">
 			        <NumericContent value="12" withMargin="false" />
 		        </TileContent>
 	        </GenericTile>
-            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Funcionarios" subheader="Desenvolvimento" press="press">
+
+            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Funcionarios Contaminados "  press="press">
 		        <TileContent unit="Unit" footer="Footer Text">
 			        <NumericContent value="25" withMargin="false" />
 		        </TileContent>
 	        </GenericTile>
+
+             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Casos ativos "  press="press">
+		        <TileContent unit="Unit" footer="Footer Text">
+			        <NumericContent value="25" withMargin="false" />
+		        </TileContent>
+	        </GenericTile>
+
+            <Text text="Casos por Setor" width="150%"/>
+            
+            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop " header="Recursos Humanos"  press="press" width="25%">
+		        <TileContent unit="Unit" footer="Footer Text">
+			        <NumericContent value="10" icon="sap-icon://line-charts" withMargin="false" />
+		        </TileContent>
+	        </GenericTile>                   
+               
+	        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Financeiro"  press="press">
+		        <TileContent unit="Unit" footer="Footer Text">
+			        <NumericContent value="12" withMargin="false" />
+		        </TileContent>
+	        </GenericTile>
+
+            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Projetos "  press="press">
+		        <TileContent unit="Unit" footer="Footer Text">
+			        <NumericContent value="25" withMargin="false" />
+		        </TileContent>
+	        </GenericTile>
+
+
         </content>
+        <footer>
+            <OverflowToolbar >
+                <ToolbarSpacer/>
+                <Button text="Confirmar" type="Accept" press="onConfirmar" width="12%"/>
+                <ToolbarSpacer/>
+            </OverflowToolbar>
+        </footer>
     </Page>		
 </mvc:View>

@@ -6,6 +6,13 @@
 >
 	<Page showHeader="true" title="Gerenciar Equipes" titleAlignment="Center">
         <content>
+            <Text text="Totais" class="sapUiSmallMarginBottom" />
+            <ToolbarSpacer ></ToolbarSpacer>
+            <Button text="Funcionarios" press=".onShowTextInfo" width="100px" class="sapUiTinyMarginBegin sapUiSmallMarginBottom"/>
+                    <Button text="Recursos Humanos" press=".onShowTextInfo" width="100px" class=" sapUiTinyMarginBegin sapUiSmallMarginBottom"/>
+                            <Button text="Financeiro" press=".onShowTextInfo" width="100px" class="sapUiTinyMarginBegin sapUiSmallMarginBottom"/>
+                                    <Button text="Projetos" press=".onShowTextInfo" width="100px" class=" sapUiTinyMarginBegin sapUiSmallMarginBottom"/>
+            <ToolbarSpacer ></ToolbarSpacer>
               <Text text="Defina a porcentagem desejada :" class="sapUiSmallMarginBottom" />
             	<RangeSlider showAdvancedTooltip="true"   range="{/RS1}" min="0" max="100" width="80%" class="sapUiMediumMarginBottom" />
                     <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Funcionarios" subheader="Recursos Humanos" press="press">
