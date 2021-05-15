@@ -4,12 +4,14 @@
     displayBlock="true"
     xmlns="sap.m"
 >
-	<Page showHeader="true" title="Relatorio" titleAlignment="Center">
+	<Page showHeader="true" title="Relátorios" titleAlignment="Center">
         <content>
     
+     <Title text="Valores Gerais:" level="H3" class="sapUiTinyMarginBegin sapUiTinyMarginTop " />
+            <ToolbarSpacer ></ToolbarSpacer>
             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop " header="Funcionarios"  press="press" width="25%">
 		        <TileContent unit="Unit" footer="Footer Text">
-			        <NumericContent value="10" icon="sap-icon://line-charts" withMargin="false" />
+			        <NumericContent value="10"  withMargin="false" />
 		        </TileContent>
 	        </GenericTile>                   
                
@@ -31,11 +33,13 @@
 		        </TileContent>
 	        </GenericTile>
 
-            <Text text="Casos por Setor" width="150%"/>
+            <ToolbarSpacer ></ToolbarSpacer>
+             <Title text="Casos por setor:" level="H3" class="sapUiTinyMarginBegin sapUiTinyMarginTop " />
+             <ToolbarSpacer ></ToolbarSpacer>
             
             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop " header="Recursos Humanos"  press="press" width="25%">
 		        <TileContent unit="Unit" footer="Footer Text">
-			        <NumericContent value="10" icon="sap-icon://line-charts" withMargin="false" />
+			        <NumericContent value="10"  withMargin="false" />
 		        </TileContent>
 	        </GenericTile>                   
                
@@ -53,12 +57,5 @@
 
 
         </content>
-        <footer>
-            <OverflowToolbar >
-                <ToolbarSpacer/>
-                <Button text="Confirmar" type="Accept" press="onConfirmar" width="12%"/>
-                <ToolbarSpacer/>
-            </OverflowToolbar>
-        </footer>
     </Page>		
 </mvc:View>
