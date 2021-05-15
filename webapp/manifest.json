@@ -98,6 +98,11 @@
                 "name": "Listar",
                 "pattern": "Listar",
                 "target": ["Menu", "Listar"]
+                },
+                {
+                "name": "Teste",
+                "pattern": "Teste",
+                "target": ["Menu", "Teste"]
                 }
             ],
             "targets": {
@@ -138,6 +143,14 @@
 					"clearControlAggregation": false,
 					"viewId": "listar",
                     "viewName": "Listar",
+                    "controlAggregation": "detailPages"
+                },
+                 "Teste": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewId": "teste",
+                    "viewName": "Teste",
                     "controlAggregation": "detailPages"
                 }
             }

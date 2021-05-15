@@ -8,21 +8,26 @@
         <content>
             <Title text="Totais:" level="H3" class="sapUiTinyMarginBegin sapUiTinyMarginTop " />
                 <ToolbarSpacer ></ToolbarSpacer>
-                 <Button text="Funcionarios" press=".onShowTextInfo" width="100px" class="sapUiTinyMarginBegin sapUiSmallMarginBottom"/>
-                    <Button text="Recursos Humanos" press=".onShowTextInfo" width="180px" class=" sapUiTinyMarginBegin sapUiSmallMarginBottom"/>
-                        <Button text="Financeiro" press=".onShowTextInfo" width="100px" class="sapUiTinyMarginBegin sapUiSmallMarginBottom"/>
-                            <Button text="Projetos" press=".onShowTextInfo" width="100px" class=" sapUiTinyMarginBegin sapUiSmallMarginBottom"/>
-                                <ToolbarSpacer ></ToolbarSpacer>
-              <Title text="Escolha a porcentagem:" level="H3" class="sapUiTinyMarginBegin sapUiTinyMarginTop " />
-                <ToolbarSpacer ></ToolbarSpacer>
-
-            	    	<Slider value="50" width="90%"
-				            min="0" max="100"
-				            showAdvancedTooltip="true"
-				            showHandleTooltip="false"
-				            class="sapUiMediumMarginBottom" />
-                        <ToolbarSpacer ></ToolbarSpacer>
-                        
+                <!--Card de quantidades de funcionários-->
+                 	<GenericTag text="Funcionários"  design="StatusIconHidden" status="Warning"  class=" sapUiTinyMarginBegin sapUiSmallMarginBottom">
+					    <ObjectNumber state="None" emphasized="true" number="200"  />
+				    </GenericTag>
+                    <GenericTag text="Recursos Humanos"  design="StatusIconHidden" status="Warning"  class=" sapUiTinyMarginBegin sapUiSmallMarginBottom">
+					    <ObjectNumber state="None" emphasized="true" number="30"  />
+				    </GenericTag>
+                    <GenericTag text="Financeiro"  design="StatusIconHidden" status="Warning"  class=" sapUiTinyMarginBegin sapUiSmallMarginBottom">
+					    <ObjectNumber state="None" emphasized="true" number="28"  />
+				    </GenericTag>
+                    <GenericTag text="Projetos"  design="StatusIconHidden" status="Warning"  class=" sapUiTinyMarginBegin sapUiSmallMarginBottom">
+					    <ObjectNumber state="None" emphasized="true" number="142"  />
+				    </GenericTag>
+                    <ToolbarSpacer ></ToolbarSpacer>
+                    <Title text="Escolha a porcentagem:" level="H3" class="sapUiTinyMarginBegin sapUiTinyMarginTop " />
+                    <ToolbarSpacer ></ToolbarSpacer>
+                    <!--Slide de escolha de porcentagem -->
+            	    <Slider value="50" width="90%" min="0" max="100" showAdvancedTooltip="true" showHandleTooltip="false" class="sapUiMediumMarginBottom" />
+                    <ToolbarSpacer ></ToolbarSpacer> 
+                    <!--Cards de quantidade de funcionarios depois de alterados--> 
                         <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Funcionarios" subheader="Recursos Humanos" press="press">
 		                    <TileContent unit="Unit" footer="Footer Text">
 			                    <NumericContent value="10"  withMargin="false" />
@@ -38,9 +43,8 @@
 			                    <NumericContent value="25" withMargin="false" />
 		                    </TileContent>
 	                    </GenericTile>
-
-                          <ToolbarSpacer ></ToolbarSpacer>
-                            <Button  text="Gerar Lista" press="onNavListar"  width="20%" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" />          
+                    <ToolbarSpacer ></ToolbarSpacer>
+                <Button  text="Gerar Lista" press="onNavListar"  width="20%" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" />          
         </content>
     </Page>		
 </mvc:View>
