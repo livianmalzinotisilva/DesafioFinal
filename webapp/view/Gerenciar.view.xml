@@ -44,7 +44,13 @@
 		                    </TileContent>
 	                    </GenericTile>
                     <ToolbarSpacer ></ToolbarSpacer>
-                <Button  text="Gerar Lista" press="onNavListar"  width="20%" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" />          
+                    <VBox>
+                    
+                        <items>
+                            <StandardListItem  title = "Listar" press="onNavRelatorio" type = "Navigation" icon = "sap-icon://activity-individual"/>
+                        </items>
+                     </VBox>
+                        
         </content>
     </Page>		
 </mvc:View>
