@@ -17,7 +17,7 @@
                         <StandardListItem title = "Gerenciar Equipes" press="onNavGerenciar" type = "Navigation" icon = "sap-icon://manager"/>
                      </items>
                      <items>
-                        <StandardListItem title = "Teste" press="onNavTeste"  type = "Navigation" icon = "sap-icon://overview-chart"/>
+                        <StandardListItem title = "Regras" press="onNavRegra" type = "Navigation" icon = "sap-icon://manager"/>
                      </items>
                 </List>
             </VBox>

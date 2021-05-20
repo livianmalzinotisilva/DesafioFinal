@@ -7,7 +7,7 @@ sap.ui.define([
 	function (Controller) {
 		"use strict";
 
-		return Controller.extend("app.l4desafio.app.controller.Teste", {
+		return Controller.extend("app.l4desafio.app.controller.Regra", {
 			onInit: function () {
 
 			}

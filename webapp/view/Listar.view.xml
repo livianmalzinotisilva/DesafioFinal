@@ -38,8 +38,7 @@
                             <Text text="{Plataformas>nome}"></Text>
                             <Text text="{Plataformas>idade}"></Text>
                             <Text text="{Plataformas>Pontos}"></Text>
-                        
-                            <!--<ObjectStatus text="{= ${Plataformas>status} === 'A' ? 'Ativo' : 'Inativo'}"  state="{= ${Plataformas>status} === 'A' ? 'Success' : 'Error'}"></ObjectStatus>-->
+                            <ObjectStatus text="{= ${Plataformas>Home office} === 'A' ? 'Ativo' : 'Inativo'}"  state="{= ${Plataformas>status} === 'A' ? 'Success' : 'Error'}"></ObjectStatus>-->
                         </cells>
                     </ColumnListItem>
                 </items>

@@ -1,0 +1,51 @@
+<mvc:View
+    controllerName="app.l4desafio.app.controller.Regra"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+   
+>
+    <Page showHeader="true" title="Regras" titleAlignment="Center">
+        <content>
+            <Table mode="MultiSelect" items="{/products}" >
+		    <columns>
+			    <Column>
+				    <Text text="Pentencente ao grupo de risco" />
+			    </Column>
+			    <Column>
+				    <Text text="Idade entre 50 e 59"  />
+			    </Column>
+			    <Column>
+				    <Text text="Idade entre 40 e 49" />
+			    </Column>
+			    <Column>
+				    <Text text="Idade entre 30 e 39 " />
+			    </Column>
+                <Column>
+				    <Text text="Idade entre 20 e 29 " />
+			    </Column>
+                <Column>
+				    <Text text="Idade entre 17 e 19 " />
+			    </Column>
+                <Column>
+				    <Text text="Reside com pessoa que pertence ao grupo de risco " />
+			    </Column>
+                 <Column>
+				    <Text text="Utiliza transporte coletivo" />
+			    </Column>
+		    </columns>
+		    <items>
+			    <ColumnListItem>
+				    <cells>
+					<Text text="{name}" />
+					<ExpandableText class="sapUiTinyMarginBottom sapUiTinyMarginTop" text="{attribute1}" overflowMode="{overflowMode}" />
+					<Text text="{attribute2}" />
+					<Text text="{status}" />
+				    </cells>
+			    </ColumnListItem>
+		    </items>
+	    </Table>
+
+        </content>
+	</Page>
+</mvc:View>

@@ -100,9 +100,9 @@
                 "target": ["Menu", "Listar"]
                 },
                 {
-                "name": "Teste",
-                "pattern": "Teste",
-                "target": ["Menu", "Teste"]
+                "name": "Regra",
+                "pattern": "Regra",
+                "target": ["Menu", "Regra"]
                 }
             ],
             "targets": {
@@ -145,15 +145,14 @@
                     "viewName": "Listar",
                     "controlAggregation": "detailPages"
                 },
-                 "Teste": {
-					"viewType": "XML",
+                "Regra":{
+                    "viewType": "XML",
 					"transition": "slide",
 					"clearControlAggregation": false,
-					"viewId": "teste",
-                    "viewName": "Teste",
+					"viewId": "regra",
+                    "viewName": "Regra",
                     "controlAggregation": "detailPages"
                 }
-            }
         }
     },
     "sap.cloud": {
